@@ -1,7 +1,11 @@
-function mostrarAlerta(){
-    alert("¡Has pulsado el botón!");
-    segundafuncion();
+function Saludar(){
+    alert("Hola churri");
+    emoji();
 }
-function segundafuncion() {
-    alert("¿A qué si?")
+function Despedirse() {
+    alert("Adios churri")
+    emoji();
+}
+function emoji() {
+    alert(":)")
 }
