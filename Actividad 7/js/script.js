@@ -1,38 +1,16 @@
 function saludar2() {
 
-    if (temp > 5 ){
-        document.getElementById("resultado").innerHTML = "Hace Bueno";
-        document.getElementById("resultado").style.color = "green";
-    }
-    else{
-        document.getElementById("resultado").innerHTML = "Hace mal día";
+    if (nota < 5 ){
+        document.getElementById("resultado").innerHTML = "¡Suspenso!";
         document.getElementById("resultado").style.color = "red";
-}
-}
-function saludar() {
+    }
+    if (nota > 4 ){
+        document.getElementById("resultado").innerHTML = "¡Aprobado!";
+        document.getElementById("resultado").style.color = "green";
 
-    function saludar(){
-    	let num;
-        num = parseInt(document.getElementById("a").value);
-        
-        switch (num) {
-        	case 7:
-            case 8:
-            case 9:
-            case 10:
-            case 11:
-            	alert("Feliz navidad");
-            break;
-            	
-            case 3:
-            	alert("Feliz año");
-            break;
-            
-            default:
-            	alert("Eres un bestia");
-            break;
-        
-        }
-        
+}
+    if (nota < 0 && nota > 10){
+        document.getElementById("resultado").innerHTML = "no es";
+        document.getElementById("resultado").style.color = "blue";
     }
 }
