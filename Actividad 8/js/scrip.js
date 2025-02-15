@@ -1,25 +1,25 @@
 function funcionif() {
 
     if (hora > 6 && < 11 ){
-        document.getElementById("a").innerHTML = "Buenos dias";
+        document.getElementById("resultado").innerHTML = "Buenos dias";
     }
     if (hora > 12 && < 21){
-        document.getElementById("a").innerHTML = "Buenas tardes";
+        document.getElementById("resultado").innerHTML = "Buenas tardes";
     }
     if ((hora > 21 && hora < 25 ) || (hora > 0 && hora < 7) ){
-    document.getElementById("a").innerHTML = "buenas noches";
+    document.getElementById("resultado").innerHTML = "buenas noches";
 }
     if(hora > 24 ){
-    document.getElementById("a").innerHTML = "No hace";
+    document.getElementById("resultado").innerHTML = "No hace";
 }
 }
 function funcionswitch() {
 
     function saludar(){
     	let hora;
-        hora = parseInt(document.getElementById("a").value);
+        hora = parseInt(document.getElementById("resultado").value);
         
-        switch (num) {
+        switch (hora) {
         	case 7:
             case 8:
             case 9:
