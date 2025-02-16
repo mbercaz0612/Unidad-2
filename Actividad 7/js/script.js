@@ -1,4 +1,4 @@
-function saludar2() {
+function Comprobar() {
 
     if (nota < 5 ){
         document.getElementById("resultado").innerHTML = "¡Suspenso!";
