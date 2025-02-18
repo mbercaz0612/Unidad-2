@@ -1,11 +1,8 @@
 function Saludar(){
     alert("Hola churri");
-    emoji();
+    alert(";)");
 }
 function Despedirse() {
     alert("Adios churri")
-    emoji();
-}
-function emoji() {
-    alert(":)")
+    alert(":(");
 }
