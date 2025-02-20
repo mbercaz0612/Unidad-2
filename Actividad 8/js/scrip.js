@@ -1,16 +1,16 @@
 function funcionif() {
 let hora;
     hora =parseFloat(document.getElementById("resultado").value, 10);
-    if (hora > 6 && < 11 ){
+    if (hora > 6 && hora < 11 ){
         document.getElementById("resultado").innerHTML = "Buenos dias";
     }
-    if (hora > 12 && < 21){
+    if (hora > 12 && hora < 21){
         document.getElementById("resultado").innerHTML = "Buenas tardes";
     }
     if ((hora > 21 && hora < 25 ) || (hora > 0 && hora < 7) ){
     document.getElementById("resultado").innerHTML = "buenas noches";
 }
-    if(hora > 24 && < 0){
+    if(hora > 24 && hora < 0){
     document.getElementById("resultado").innerHTML = "No hace";
 }
 }
