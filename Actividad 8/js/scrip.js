@@ -1,6 +1,6 @@
 function funcionif() {
 let hora;
-    hora =parseFloat(document.getElementById("resultado").value, 10);
+    hora =parseFloat(document.getElementById("a").value, 10);
     if (hora > 6 && hora < 11 ){
         document.getElementById("resultado").innerHTML = "Buenos dias";
     }
@@ -18,7 +18,7 @@ function funcionswitch() {
 
     function saludar(){
     	let hora;
-        hora = parseInt(document.getElementById("resultado").value, 10);
+        hora = parseInt(document.getElementById("a").value, 10);
         
         switch (hora) {
         	case 7:
