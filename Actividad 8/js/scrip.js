@@ -10,13 +10,11 @@ let hora;
     if ((hora > 21 && hora < 25 ) || (hora > 0 && hora < 7) ){
     document.getElementById("resultado").innerHTML = "buenas noches";
 }
-    if(hora > 24 && hora < 0){
+    if(hora > 24 ){
     document.getElementById("resultado").innerHTML = "No hace";
 }
 }
 function funcionswitch() {
-
-    function saludar(){
     	let hora;
         hora = parseInt(document.getElementById("a").value, 10);
         
@@ -26,7 +24,7 @@ function funcionswitch() {
             case 9:
             case 10:
             case 11:
-            	alert("Buenos días");
+            	document.getElementById("resultado").innerHTML = "Buenos días";
             break;
             	
             case 12:
@@ -39,7 +37,7 @@ function funcionswitch() {
             case 19:
             case 20:
             case 21:
-            	alert("Buenas tardes");
+            	document.getElementById("resultado").innerHTML = "Buenas tardes";
             break;
             
             case 22:
@@ -52,12 +50,11 @@ function funcionswitch() {
             case 4:
             case 5:
             case 6:
-            	alert("Buenas noches");
+            	document.getElementById("resultado").innerHTML = "Buenas noches";
             break;
         
             default:
-                alert("No es")
+                document.getElementById("resultado").innerHTML = "No hace";
         }
         
-    }
 }
