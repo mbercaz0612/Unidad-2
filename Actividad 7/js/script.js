@@ -10,7 +10,7 @@ function Comprobar() {
         document.getElementById("resultado").style.color = "green";
 
 }
-    if (nota < 0 && nota > 10){
+    if (nota > 10){
         document.getElementById("resultado").innerHTML = "no es";
         document.getElementById("resultado").style.color = "blue";
     }
