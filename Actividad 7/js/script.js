@@ -14,4 +14,8 @@ function Comprobar() {
         document.getElementById("resultado").innerHTML = "no es";
         document.getElementById("resultado").style.color = "blue";
     }
+    if (nota < 0){
+        document.getElementById("resultado").innerHTML = "no es";
+        document.getElementById("resultado").style.color = "blue";
+    }
 }
