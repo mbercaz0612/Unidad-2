@@ -1,5 +1,6 @@
 function funcionif() {
-
+let hora;
+    hora =parseFloat(document.getElementById("resultado").value, 10);
     if (hora > 6 && < 11 ){
         document.getElementById("resultado").innerHTML = "Buenos dias";
     }
@@ -9,7 +10,7 @@ function funcionif() {
     if ((hora > 21 && hora < 25 ) || (hora > 0 && hora < 7) ){
     document.getElementById("resultado").innerHTML = "buenas noches";
 }
-    if(hora > 24 ){
+    if(hora > 24 && < 0){
     document.getElementById("resultado").innerHTML = "No hace";
 }
 }
@@ -17,7 +18,7 @@ function funcionswitch() {
 
     function saludar(){
     	let hora;
-        hora = parseInt(document.getElementById("resultado").value);
+        hora = parseInt(document.getElementById("resultado").value, 10);
         
         switch (hora) {
         	case 7:
