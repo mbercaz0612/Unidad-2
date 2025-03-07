@@ -7,5 +7,5 @@ function factorial() {
     for ( let cuenta= 1 ;  cuenta <= Numero ; cuenta = cuenta + 1) {
             resultado = resultado * cuenta;
     }
-    alert("El factorial es " + resultado);
+    document.getElementById("resultado").innerHTML = "El factorial es " + resultado;
 }
